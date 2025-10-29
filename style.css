@@ -3,7 +3,7 @@
 
 html {
     font-family: 'h Hangero','Subatomic', sans-serif;
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: bolder;
 }
 
@@ -35,6 +35,7 @@ nav {
 }
 .nav-links a {
     text-decoration: none;
+    color: blanchedalmond;
 }
 .container .info h1 {
     font-size: 3rem;
@@ -61,4 +62,40 @@ nav {
 
 #foot {
     font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        position: relative;
+    }
+
+    #hero {
+        display: flex;
+        justify-content: space-evenly;
+        justify-items: auto;
+    }
+    
+    .ms {
+        display: flex;
+        justify-content: center;
+    }
+
+    #contact-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.ms {
+    display: flex;
+    flex-direction: column;
 }
