@@ -56,22 +56,26 @@
             <form action="#" id="contact-form" method="post">
                 <div class="form-group">
                     <label for="fname">First Name:
-                        <input type="text" id="fname" placeholder="Mike Who?" required>
+                        <input type="text" id="fname" placeholder="Mike Who?" required aria-required="true">
+                        <span id="fname-error" class="error-message" aria-live="polite"></span>
                     </label>
                     
                     <label for="lname">Last Name:
-                        <input type="text" id="lname" placeholder="Mike Jones!" required>
+                        <input type="text" id="lname" placeholder="Mike Jones!" required aria-required="true">
+                        <span id="lname-error" class="error-message" aria-live="polite"></span>
                     </label>
                     
                     <label for="email">Email:
-                        <input type="email" id="email" placeholder="m.jones@who.org" required>
+                        <input type="email" id="email" placeholder="m.jones@who.org" required aria-required="true">
+                        <span id="email-error" class="error-message" aria-live="polite"></span>
                     </label>
                     
                     <label for="number">Phone Number:
-                        <input type="tel" name="number" id="number" placeholder="281-330-8004" required>
+                        <input type="tel" name="number" id="number" placeholder="281-330-8004" required aria-required="true">
+                        <span id="number-error" class="error-message" aria-live="polite"></span>
                     </label>
-                    <input type="submit" value="Submit">
-                    <span id="name-error" class="error-message" aria-live="polite"></span>
+
+                    <input type="submit" value="Submit Info" aria-label="Submit contact form">
                 </div>
             </form>
         </section>

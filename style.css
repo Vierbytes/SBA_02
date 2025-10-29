@@ -19,6 +19,19 @@ nav {
     backdrop-filter: blur(15px);
 }
 
+.info{
+    display: flex;
+    /* flex-direction: end; */
+    /* flex-wrap: wrap; */
+    /* align-items: flex-start; */
+    /* align-self: flex-end; */
+}
+
+.info {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
 #hero {
     color: aliceblue;
     width: 100%;
@@ -98,4 +111,9 @@ nav {
 .ms {
     display: flex;
     flex-direction: column;
+}
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
