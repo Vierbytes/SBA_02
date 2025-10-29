@@ -12,7 +12,7 @@
     <header>
         <h1>Accessible Design Co.</h1>
         <nav>
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -25,13 +25,13 @@
             <div class="container">
                 <div class="info">
                     <h1>
-                        Lorem ipsum dolor sit, amet
+                        Lorem ipsum dolor sit
                     </h1>
                     <h2>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Lorem ipsum, dolor sit amet consectetur. 
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil voluptatibus dolorem ducimus necessitatibus voluptate numquam fuga ea sit nostrum natus quos eum, vel eius ut doloribus optio non totam!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nihil voluptatibus nostrum natus quos eum, vel eius ut doloribus optio non totam!
                     </p>
                 </div>
             </div>
@@ -50,6 +50,30 @@
                     Id ex nostrud est commodo non nostrud irure aliqua sunt enim ipsum est irure. Et voluptate aute sint amet laboris. Culpa enim ipsum pariatur ullamco do id. Nisi non consequat ut fugiat laborum dolore quis anim sit exercitation esse in aute eiusmod. Aliqua voluptate laboris proident ad enim.
                 </p>
             </article>
+        </section>
+        <section class="contact">
+            <h2 id="contact-title">Get in Touch</h2>
+            <form action="#" id="contact-form" method="post">
+                <div class="form-group">
+                    <label for="fname">First Name:
+                        <input type="text" id="fname" placeholder="Mike Who?" required>
+                    </label>
+                    
+                    <label for="lname">Last Name:
+                        <input type="text" id="lname" placeholder="Mike Jones!" required>
+                    </label>
+                    
+                    <label for="email">Email:
+                        <input type="email" id="email" placeholder="m.jones@who.org" required>
+                    </label>
+                    
+                    <label for="number">Phone Number:
+                        <input type="tel" name="number" id="number" placeholder="281-330-8004" required>
+                    </label>
+                    <input type="submit" value="Submit">
+                    <span id="name-error" class="error-message" aria-live="polite"></span>
+                </div>
+            </form>
         </section>
     </main>
 
